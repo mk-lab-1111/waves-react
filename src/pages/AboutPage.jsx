@@ -3,7 +3,7 @@ import { FREQ_GUIDE } from '../data/tracks'
 export default function AboutPage() {
   return (
     <div className="flex-1 overflow-y-auto no-scrollbar px-5 pt-14 pb-8">
-      <img src="/waves-mark.png" alt="waves" className="w-[90px] mb-6 opacity-90"
+      <img src={import.meta.env.BASE_URL + "waves-mark.png"} alt="waves" className="w-[90px] mb-6 opacity-90"
         style={{ filter: 'drop-shadow(0 4px 16px rgba(216,178,124,0.2))' }} />
       <p className="font-serif text-[1.5rem] font-semibold leading-[1.8] tracking-[0.1em] mb-4">
         バイノーラルビート × メディテーション<br />二つの音が生む、静かなうねり

@@ -31,7 +31,7 @@ export default function SplashScreen({ onDone }) {
 
       {/* ロゴ */}
       <img
-        src="/waves-logo.png"
+        src={import.meta.env.BASE_URL + "waves-logo.png"}
         alt="waves"
         className="w-[260px] relative z-10"
         style={{

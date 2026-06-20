@@ -7,7 +7,7 @@ export default function HomePage({ isPremium, onSelectTrack, onLockedTap }) {
   return (
     <div className="flex-1 overflow-y-auto no-scrollbar px-5 pb-6">
       <div className="pt-12 pb-6 flex flex-col items-center text-center">
-        <img src="/waves-mark.png" alt="waves" className="w-[120px] mb-3"
+        <img src={import.meta.env.BASE_URL + "waves-mark.png"} alt="waves" className="w-[120px] mb-3"
           style={{ filter: 'drop-shadow(0 4px 20px rgba(216,178,124,0.25))' }} />
         <p className="text-[0.62rem] tracking-[0.4em] text-gold/80 mb-5">BINAURAL BEAT MEDITATION</p>
         <p className="font-serif text-[1.5rem] font-semibold leading-[1.7] tracking-[0.1em]">

@@ -10,9 +10,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #3A6E8F, #0B1E2E)',
     description: '重力から解き放たれ、意識が深く沈んでいく。身体の緊張が一つずつほどけていきます。クジラの声と波音に包まれながら、深い眠りへと運ばれていく体験です。',
     audio: {
-      soft:    '/audio/shinkai_trial_soft.mp3',
-      deep:    '/audio/shinkai_trial_deep.mp3',
-      deepest: '/audio/shinkai_trial_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/shinkai_trial_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/shinkai_trial_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/shinkai_trial_deepest.mp3',
     },
   },
   {
@@ -25,9 +25,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #3A6E8F, #0B1E2E)',
     description: '重力から解き放たれ、意識が深く沈んでいく。身体の緊張が一つずつほどけていきます。クジラの声と波音に包まれながら、深い眠りへと運ばれていく体験です。',
     audio: {
-      soft:    '/audio/shinkai_soft.mp3',
-      deep:    '/audio/shinkai_deep.mp3',
-      deepest: '/audio/shinkai_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/shinkai_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/shinkai_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/shinkai_deepest.mp3',
     },
   },
   {
@@ -40,9 +40,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #5A7A4E, #16241A)',
     description: '覚醒と眠りの境界に、静かに足を踏み入れる。鳥の声が遠くに響く、神秘の森の中。思考が緩み、直感とひらめきが自然と満ちていく瞑想体験です。',
     audio: {
-      soft:    '/audio/forest_soft.mp3',
-      deep:    '/audio/forest_deep.mp3',
-      deepest: '/audio/forest_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/forest_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/forest_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/forest_deepest.mp3',
     },
   },
   {
@@ -55,9 +55,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #E8D7B0, #B98E4E)',
     description: '張りつめていた心が、少しずつほどけていく。柔らかな光に包まれる、安心の時間。緊張から解放され、穏やかな満ち足りた気持ちに包まれます。',
     audio: {
-      soft:    '/audio/hikari_soft.mp3',
-      deep:    '/audio/hikari_deep.mp3',
-      deepest: '/audio/hikari_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/hikari_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/hikari_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/hikari_deepest.mp3',
     },
   },
   {
@@ -70,9 +70,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #E8845A, #6E2A1E)',
     description: '意識がはっきりと冴えわたっていく。大地のエネルギーが足元から満ちていく。内側から力が湧き上がり、集中と活力に満たされていく体験です。',
     audio: {
-      soft:    '/audio/genshi_soft.mp3',
-      deep:    '/audio/genshi_deep.mp3',
-      deepest: '/audio/genshi_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/genshi_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/genshi_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/genshi_deepest.mp3',
     },
   },
   {
@@ -85,9 +85,9 @@ export const TRACKS = [
     orb: 'radial-gradient(circle at 30% 30%, #6E5A9E, #1A1430)',
     description: '自分という境界が、静かに溶けていく。星々のきらめきの中、意識が大きく広がっていく感覚。普段とは違う視点から、世界を見つめる時間です。',
     audio: {
-      soft:    '/audio/cosmos_soft.mp3',
-      deep:    '/audio/cosmos_deep.mp3',
-      deepest: '/audio/cosmos_deepest.mp3',
+      soft:    import.meta.env.BASE_URL + 'audio/cosmos_soft.mp3',
+      deep:    import.meta.env.BASE_URL + 'audio/cosmos_deep.mp3',
+      deepest: import.meta.env.BASE_URL + 'audio/cosmos_deepest.mp3',
     },
   },
 ]

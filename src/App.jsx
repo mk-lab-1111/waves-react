@@ -219,7 +219,7 @@ function PremiumScreen({ isPremium, onUnlock, onBack }) {
       </div>
 
       <div className="flex-1 overflow-y-auto no-scrollbar px-7 flex flex-col items-center text-center justify-center">
-        <img src="/waves-mark.png" alt="waves" className="w-[120px] mb-8"
+        <img src={import.meta.env.BASE_URL + "waves-mark.png"} alt="waves" className="w-[120px] mb-8"
           style={{ filter: 'drop-shadow(0 6px 28px rgba(216,178,124,0.35))' }} />
 
         <p className="font-serif text-[1.7rem] font-semibold tracking-[0.1em] mb-3">
