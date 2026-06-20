@@ -29,7 +29,18 @@ export default function App() {
     const audio = audioRef.current
     if (!audio) return
     const onTime   = () => setCurrentTime(audio.currentTime)
-    const onLoaded = () => setDuration(audio.duration)
+    const onLoaded = () => {
+     if (!isFinite(audio.duration)) {
+       audio.currentTime = 1e101
+       audio.addEventListener('timeupdate', function fix() {
+         audio.removeEventListener('timeupdate', fix)
+         audio.currentTime = 0
+         setDuration(audio.duration)
+       })
+     } else {
+       setDuration(audio.duration)
+     }
+   }
     const onEnded  = () => {
       if (loopMode === 'loop') {
         audio.currentTime = 0
