@@ -32,7 +32,7 @@ export default function App() {
      setCurrentTime(audio.currentTime)
      if (isFinite(audio.duration)) setDuration(audio.duration)
    }
-  
+
     const onLoaded = () => {
      if (!isFinite(audio.duration)) {
        audio.currentTime = 1e101
@@ -64,7 +64,7 @@ export default function App() {
       audio.removeEventListener('durationchange', onLoaded)
       audio.removeEventListener('ended', onEnded)
     }
-  }, [loopMode])
+  }, [loopMode, showSplash])
 
   // intensity切替：再生位置維持
   useEffect(() => {
