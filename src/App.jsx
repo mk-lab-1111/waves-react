@@ -52,10 +52,12 @@ export default function App() {
     }
     audio.addEventListener('timeupdate', onTime)
     audio.addEventListener('loadedmetadata', onLoaded)
+    audio.addEventListener('durationchange', onLoaded)
     audio.addEventListener('ended', onEnded)
     return () => {
       audio.removeEventListener('timeupdate', onTime)
       audio.removeEventListener('loadedmetadata', onLoaded)
+      audio.removeEventListener('durationchange', onLoaded)
       audio.removeEventListener('ended', onEnded)
     }
   }, [loopMode])
