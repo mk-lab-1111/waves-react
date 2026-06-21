@@ -28,7 +28,11 @@ export default function App() {
   useEffect(() => {
     const audio = audioRef.current
     if (!audio) return
-    const onTime   = () => setCurrentTime(audio.currentTime)
+    const onTime   = () => {
+     setCurrentTime(audio.currentTime)
+     if (isFinite(audio.duration)) setDuration(audio.duration)
+   }
+  
     const onLoaded = () => {
      if (!isFinite(audio.duration)) {
        audio.currentTime = 1e101
