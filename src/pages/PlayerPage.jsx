@@ -54,7 +54,7 @@ export default function PlayerPage({
 
         {/* Effect */}
         <p className="text-[0.65rem] tracking-[0.35em] text-inkFaint mt-10 mb-4">EFFECT</p>
-        <p className="text-[0.8rem] text-gold/85 leading-[1.95] tracking-[0.04em] max-w-[300px]">
+        <p className="text-[0.8rem] text-gold leading-[1.95] tracking-[0.04em] max-w-[300px]">
           {track.description}
         </p>
 

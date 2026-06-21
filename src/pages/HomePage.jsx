@@ -9,7 +9,7 @@ export default function HomePage({ isPremium, onSelectTrack, onLockedTap }) {
       <div className="pt-12 pb-6 flex flex-col items-center text-center">
         <img src={import.meta.env.BASE_URL + "waves-mark.png"} alt="waves" className="w-[120px] mb-3"
           style={{ filter: 'drop-shadow(0 4px 20px rgba(216,178,124,0.25))' }} />
-        <p className="text-[0.62rem] tracking-[0.4em] text-gold/80 mb-5">BINAURAL BEAT MEDITATION</p>
+        <p className="text-[0.62rem] tracking-[0.4em] text-gold mb-5">BINAURAL BEAT MEDITATION</p>
         <p className="font-serif text-[1.5rem] font-semibold leading-[1.7] tracking-[0.1em]">
           今夜、どの<br />うねりを聴きますか。
         </p>
@@ -39,7 +39,7 @@ export default function HomePage({ isPremium, onSelectTrack, onLockedTap }) {
             無料・{freeTrack.duration}
           </span>
         </div>
-        <p className="text-[0.78rem] text-gold/85 leading-[1.85] tracking-[0.04em] pl-0.5">
+        <p className="text-[0.78rem] text-gold leading-[1.85] tracking-[0.04em] pl-0.5">
           {freeTrack.description}
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function HomePage({ isPremium, onSelectTrack, onLockedTap }) {
               </svg>
             )}
           </div>
-          <p className="text-[0.78rem] text-gold/85 leading-[1.85] tracking-[0.04em] pl-0.5">
+          <p className="text-[0.78rem] text-gold leading-[1.85] tracking-[0.04em] pl-0.5">
             {track.description}
           </p>
         </div>
