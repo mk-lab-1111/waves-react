@@ -176,7 +176,7 @@ export default function PlayerPage({
           <div className="absolute rounded-full border border-gold/[0.08]" style={{ inset: 28 }} />
           <div className="relative w-[150px] h-[158px] rounded-lg"
             style={{
-              backgroundImage: 'url(/silhouette.jpg)',
+              backgroundImage: 'url(' + import.meta.env.BASE_URL + 'silhouette.jpg)',
               backgroundSize: 'cover', backgroundPosition: 'center',
               filter: 'grayscale(1) brightness(1.4)', opacity: 0.6, mixBlendMode: 'screen',
             }} />
